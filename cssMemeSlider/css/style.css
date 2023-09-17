@@ -64,3 +64,61 @@ label, a {
 #switch5:checked ~ #slides .image{
     margin-left: -400%;
 }
+
+#active label {
+    border-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+    cursor: pointer; /* Изменение курсора при наведении */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+}
+
+/* Изменение цвета фона при наведении */
+#active label:hover {
+    background: #76c8ff;
+}
+
+/* Изменение стиля контрола при выборе (активный контрол) */
+#active label:active {
+    background: #18a3dd;
+    border-color: #18a3dd !important;
+}
+
+
+/* Изменение стиля активного контрола при наведении */
+#active label:hover:active {
+    background: #0e70a0;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4),
+#switch5:checked ~ #active label:nth-child(5) {
+    background: #18a3dd; /* Цвет активного контрола */
+    border-color: #18a3dd !important; /* Цвет границы активного контрола */
+}
+
+#active{
+    display: flex;
+    justify-content: end;
+    column-gap: 10px;
+    margin: -3% 0 0;
+    padding-bottom: 55px;
+}
+
+#active label:hover{
+    background: #76c8ff;
+    border-color: #777 !important;
+}
+
+#switch1:checked ~ #controls label:nth-child(1)
+#switch2:checked ~ #controls label:nth-child(2)
+#switch3:checked ~ #controls label:nth-child(3)
+#switch4:checked ~ #controls label:nth-child(4)
+#switch5:checked ~ #controls label:nth-child(5){
+    background: #18a3dd;
+    border-color: #18a3dd !important;
+}
