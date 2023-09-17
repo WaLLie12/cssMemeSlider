@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(59, 57, 53);
+}
+
+#slider{
+    margin: 0 auto;
+}
+
+#slides article{
+    width: 20%;
+    float: left;
+}
+
+#slides .image{
+    width: 500%;
+    line-height: 0;
+}
+
+#slides p{
+    text-align: initial;
+}
+
+#overflow{
+    width: 100%;
+    overflow: hidden;
+}
+
+article img{
+    width: 100%;
+}
+
+#desktop:checked ~ #slider{
+    max-width: 1024px;
+    min-height: 600px;
+    background-color: currentColor;
+    padding: 20px;
+}
+
+label, a {
+    cursor: pointer;
+}
+
+.all input{
+    display: none;
+}
+
+#switch1:checked ~ #slides .image
+{
+    margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+    margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+    margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+    margin-left: -300%;
+}
+
+#switch5:checked ~ #slides .image{
+    margin-left: -400%;
+}
