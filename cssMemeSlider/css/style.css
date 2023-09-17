@@ -185,3 +185,18 @@ label, a {
 #switch5:checked ~ #slides .text article:nth-child(5) {
     opacity: 1; /* Завершение анимации (появление) */
 }
+
+@media (max-width: 500px) {
+    #desktop:checked ~ #slider{
+        min-height: 0px;
+    }
+
+    #active{
+        justify-content: center;
+        margin: -80px 0 0 0;
+    }
+
+    #slides p{
+        padding: 50px 0 0 0;
+    }
+}
