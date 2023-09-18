@@ -30,10 +30,10 @@ article img{
 }
 
 #desktop:checked ~ #slider{
-    max-width: 1024px;
-    min-height: 600px;
+    max-width: 64rem;
+    min-height: 37.5rem;
     background-color: currentColor;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 label, a {
@@ -66,10 +66,10 @@ label, a {
 }
 
 #active label {
-    border-radius: 10px;
+    border-radius: 0.625rem;
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    height: 0.9375rem;
     background: #bbb;
     cursor: pointer; /* Изменение курсора при наведении */
     transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
@@ -104,9 +104,9 @@ label, a {
 #active{
     display: flex;
     justify-content: end;
-    column-gap: 10px;
+    column-gap: 0.625rem;
     margin: -3% 0 0;
-    padding-bottom: 55px;
+    padding-bottom: 3.4375rem;
 }
 
 #active label:hover{
@@ -188,15 +188,35 @@ label, a {
 
 @media (max-width: 500px) {
     #desktop:checked ~ #slider{
-        min-height: 0px;
+        min-height: 0rem;
     }
 
     #active{
         justify-content: center;
-        margin: -80px 0 0 0;
+        margin: -5rem 0 0 0;
     }
 
     #slides p{
-        padding: 50px 0 0 0;
+        padding: 3.125rem 0 0 0;
     }
+}
+.edit__link{
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    color: rgb(189, 177, 177);
+    padding-bottom: 40px;
+    line-height: 40px;
+}
+
+.github__link {
+    color: rgb(189, 177, 177);
+    text-decoration: none;
+}
+
+
+.github__link:hover{
+    color:rgb(205, 144, 23)
 }
