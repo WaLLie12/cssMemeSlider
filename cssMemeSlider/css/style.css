@@ -200,3 +200,23 @@ label, a {
         padding: 3.125rem 0 0 0;
     }
 }
+.edit__link{
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    color: rgb(189, 177, 177);
+    padding-bottom: 40px;
+    line-height: 40px;
+}
+
+.github__link {
+    color: rgb(189, 177, 177);
+    text-decoration: none;
+}
+
+
+.github__link:hover{
+    color:rgb(205, 144, 23)
+}
